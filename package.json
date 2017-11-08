@@ -1,0 +1,15 @@
+{
+  "name": "httpstatuscodes.pw",
+  "version": "1.0.0",
+  "description": "Http Satus Codes Utility",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Dorian Machado",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
