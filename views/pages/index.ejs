@@ -15,21 +15,22 @@
             </nav> -->
             <h3 class="text-muted">HTTP Status Codes</h3>
           </header>
-    
+
           <main role="main">
-    
+
             <div class="jumbotron">
               <h1 class="display-5">HTTP Status Code Utility</h1>
               <br>
               <p><%= content1 %></p>
               <p><%= content2 %></p>
               <p><a href="http://httpstatuscodes.pw/code/200" target="_blank">httpstatuscodes.pw/code/200</a></p>
+              <p>Could be <strong>POST</strong> or <strong>GET</strong></p>
               <br>
               <p><a class="btn btn-lg btn-success" href="https://github.com/dorian599/httpstatuscodes.pw" role="button" target="_blank"><i class="fa fa-github fa-fw"></i> Code</a></p>
             </div>
-                        
+
             <p class="lead text-muted"><%= content3 %> <a href="mailto:dorian599@gmail.com?Subject=New%20HTTP%20Status%20Code" target="_top">dorian599@gmail.com</a></p>
-                      
+
             <div class="row marketing">
 
                 <div class="col-lg-4">
@@ -38,7 +39,7 @@
                         <h4> <a href="/code/<%= httpStatusCode.code %>" target="_blank"><%= httpStatusCode.code %> </a> </h4>
                         <p> <%= httpStatusCode.description %> </p>
                       <% } %>
-                    <% }); %>                  
+                    <% }); %>
                 </div>
 
                 <div class="col-lg-4">
@@ -47,7 +48,7 @@
                         <h4> <a href="/code/<%= httpStatusCode.code %>" target="_blank"><%= httpStatusCode.code %> </a> </h4>
                         <p> <%= httpStatusCode.description %> </p>
                       <% } %>
-                    <% }); %>                  
+                    <% }); %>
                 </div>
 
                 <div class="col-lg-4">
@@ -56,11 +57,11 @@
                         <h4> <a href="/code/<%= httpStatusCode.code %>" target="_blank"><%= httpStatusCode.code %> </a> </h4>
                         <p> <%= httpStatusCode.description %> </p>
                       <% } %>
-                    <% }); %>                  
+                    <% }); %>
                 </div>
 
             </div>
-    
+
           </main>
 
 <% include ../partials/footer %>

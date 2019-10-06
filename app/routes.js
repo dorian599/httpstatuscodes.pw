@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
   var content2 = "It's simple, just add the HTTP Status Code you want to test in the URL like this:";
 
   var content3 = "This is a list of the most common HTTP Status Codes and supported by this utility. If you know about another code just drop me a mail at ";
-  
+
   var httpStatusCodes = [
     { code: 200, column: 'L', description: 'OK' },
     { code: 201, column: 'M', description: 'Created' },
@@ -76,6 +76,12 @@ router.get('/', function(req, res) {
 });
 
 router.get('/code/:codeID', function(req, res) {
+  var code = req.params.codeID ;
+  res.statusCode=code;
+  res.json({ message: 'HTTP Status Code', code: code });
+});
+
+router.post('/code/:codeID', function(req, res) {
   var code = req.params.codeID ;
   res.statusCode=code;
   res.json({ message: 'HTTP Status Code', code: code });
