@@ -75,11 +75,11 @@ router.get('/', function(req, res) {
   });
 });
 
-router.get('/code/:codeID', function(req, res) {
-  var code = req.params.codeID ;
-  res.statusCode=code;
-  res.json({ message: 'HTTP Status Code', code: code });
-});
+// router.get('/code/:codeID', function(req, res) {
+//   var code = req.params.codeID ;
+//   res.statusCode=code;
+//   res.json({ message: 'HTTP Status Code', code: code });
+// });
 
 router.post('/code/:codeID', function(req, res) {
   var code = req.params.codeID ;
